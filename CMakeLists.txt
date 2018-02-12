@@ -28,8 +28,9 @@ add_custom_command(OUTPUT run-swig-result
   COMMAND ${run-swig-command})
 
 # Note: If the build fails with a NOTFOUND error, try adding the directory of
-# ruby.h and ruby/config.h on your system to the find_path hints below.
+# ruby.h and ruby/config.h on your system to the find_path HINTS below.
 # Unfortunately, there is no way to determine this automatically.
+# Try looking in ~/.rbenb/versions, ~/.rvm/rubies, /usr/local/lib/ruby, etc.
 find_path(ruby-header-directory
   ruby.h
   HINTS
