@@ -14,14 +14,7 @@ function(add_swig_library target)
     LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 endfunction()
 
-set(swig-files
-  lib/hello_world.i)
-
-add_swig_library(HelloWorld
-  lib/hello_world.c
-  lib/hello_world_wrap.c)
-
-set(run-swig-command swig -ruby ${PROJECT_SOURCE_DIR}/${swig-files})
+set(run-swig-command bash ${PROJECT_SOURCE_DIR}/build-swig.sh)
 execute_process(COMMAND ${run-swig-command})
 add_custom_command(OUTPUT run-swig-result
   PRE_BUILD
@@ -44,3 +37,7 @@ include_directories(
   ${ruby-header-directory}
   ${ruby-config-header-directory}
   ${PROJECT_SOURCE_DIR}/lib)
+
+add_swig_library(HelloWorld
+  lib/hello_world.c
+  lib/hello_world_wrap.c)
