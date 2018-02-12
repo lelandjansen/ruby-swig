@@ -9,18 +9,12 @@
 
 *.gem
 
-# rspec failure tracking
-.rspec_status
-
 Gemfile.lock
 .ruby-version
 .ruby-gemset
 
 *.swp
 /.idea/
-
-.rubocop-*
-.rspec_status
 
 /build/
 *.so
