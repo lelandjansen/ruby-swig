@@ -19,11 +19,11 @@ $ sudo apt update
 $ sudo apt install swig
 
 # Compile components
-$ mkdir buid && cd build
+$ mkdir build && cd build
 $ cmake ..
 $ cmake --build . --
 
-# Run project
+# Run from project root directory
 $ bundle exec bin/ruby_swig.rb
 Hello World!
 ```
