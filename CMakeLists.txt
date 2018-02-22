@@ -44,7 +44,6 @@ find_path(ruby-config-header-directory
   ruby/config.h
   HINTS
     $ENV{HOME}/.rbenv/versions/2.5.0/include/ruby-2.5.0/x86_64-linux
-    $ENV{HOME}/.rbenv/versions/2.5.0/include/ruby-2.5.0/x86_64-darwin15
     /usr/local/rvm/rubies/ruby-2.4.1/include/ruby-2.4.0/x86_64-linux
     /usr/local/rvm/rubies/ruby-2.4.0/include/ruby-2.4.0/x86_64-linux)
 include_directories(
